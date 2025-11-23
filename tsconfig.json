@@ -1,0 +1,39 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+
+    "verbatimModuleSyntax": true,
+    "isolatedModules": true,
+    "resolveJsonModule": true,
+    "sourceMap": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+
+    "types": ["vite/client"],
+
+    /**
+     * Check JS inside .js and .svelte files.
+     * You can disable this after converting all JS → TS.
+     */
+    "checkJs": true,
+
+    /**
+     * Recommended for tsconfig
+     */
+    "strict": true,
+    "allowJs": true,               
+    "noEmit": true                 
+  },
+
+  /**
+   * Keep Svelte and TS files included
+   */
+  "include": [
+    "src/**/*.d.ts",
+    "src/**/*.ts",
+    "src/**/*.js",
+    "src/**/*.svelte"
+  ]
+}
