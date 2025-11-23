@@ -5,6 +5,6 @@
   }
 </script>
 
-<button onclick={increment}>
+<button onclick={increment}  class="btn preset-outlined-primary-500">
   count is {count}
 </button>
